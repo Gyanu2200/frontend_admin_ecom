@@ -6,7 +6,7 @@ const GlobalMessage = () => {
     <div className="bg-dark text-light">
       <Container className="d-flex justify-content-between p-1">
         <div>
-          <i class="fa-brands fa-youtube"></i>1300 MYSHOP
+          <i className="fa-brands fa-youtube"></i>1300 MYSHOP
         </div>
         <div>
           <i className="fa-solid fa-shop me-2"></i>

@@ -63,6 +63,7 @@ const RegisterPage = () => {
 
   const handleOnChange = (e) => {
     const { name, value } = e.target;
+    console.log(name, value);
     setErr("");
     // let str = "";
     if (name === "password") {
@@ -80,8 +81,8 @@ const RegisterPage = () => {
   const handleOnSubmit = async (e) => {
     e.preventDefault(e);
     setIsLoading(true);
-    const { confirmedPassword, ...rest } = form;
-    if (confirmedPassword !== rest.password) {
+    const { confirmPassword, ...rest } = form;
+    if (confirmPassword !== rest.password) {
       return alert("Password do not match");
     }
 

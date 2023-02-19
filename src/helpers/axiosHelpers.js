@@ -15,3 +15,28 @@ export const postAdminUser = async (obj) => {
     };
   }
 };
+
+export const verifyAdminUser = async (obj) => {
+  try {
+    const { data } = await axios.post(adminAPI + "/verify-email", obj);
+    console.log(data);
+    return data;
+  } catch (error) {
+    return {
+      status: "error",
+      message: error.message,
+    };
+  }
+};
+export const fetchAdminLogin = async (obj) => {
+  try {
+    const { data } = await axios.post(adminAPI + "/login", obj);
+    console.log(data);
+    return data;
+  } catch (error) {
+    return {
+      status: "error",
+      message: error.message,
+    };
+  }
+};

@@ -7,6 +7,9 @@ const Header = () => {
   return (
     <Navbar bg="warning" expand="md">
       <Container>
+        {/* <Link to="/" className="navbar-brand">
+          <i class="fa-regular fa-bars"></i>
+        </Link> */}
         <Link to="/" className="navbar-brand">
           Admin CMS
         </Link>
@@ -15,10 +18,10 @@ const Header = () => {
           <Nav className="ms-auto">
             <Link to="/" className="nav-link">
               {" "}
-              <i class="fa-solid fa-right-to-bracket"></i> Login
+              <i className="fa-solid fa-right-to-bracket"></i> Login
             </Link>
             <Link to="/register" className="nav-link">
-              <i class="fa-solid fa-pencil"></i> Register
+              <i className="fa-solid fa-pencil"></i> Register
             </Link>
           </Nav>
         </Navbar.Collapse>
