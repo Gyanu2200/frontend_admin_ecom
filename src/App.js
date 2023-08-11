@@ -1,11 +1,14 @@
 import "./App.css";
 import RegisterPage from "./pages/register/RegisterPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <h3>Admin CMS Frontend starts</h3>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<RegisterPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
